@@ -187,6 +187,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PaginasOrtizController.cs" />
     <Compile Include="Controllers\PublicacionesOrtizController.cs" />
+    <Compile Include="Dolar.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -298,6 +299,7 @@
     <Content Include="Views\PublicacionesOrtiz\Index.cshtml" />
     <Content Include="Views\PublicacionesOrtiz\MesOrtiz.cshtml" />
     <Content Include="Views\PaginasOrtiz\PaginasOrtiz.cshtml" />
+    <Content Include="Views\PaginasOrtiz\ParaTiOrtiz.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

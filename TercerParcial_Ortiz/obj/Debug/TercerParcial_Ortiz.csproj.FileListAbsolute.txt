@@ -111,3 +111,4 @@ C:\Users\Walter Ortiz\Documents\UAA\C#\Tercer Parcial\TercerParcial_Ortiz\Tercer
 C:\Users\Walter Ortiz\Documents\UAA\C#\Tercer Parcial\TercerParcial_Ortiz\TercerParcial_Ortiz\obj\Debug\TercerParcial_Ortiz.csproj.CopyComplete
 C:\Users\Walter Ortiz\Documents\UAA\C#\Tercer Parcial\TercerParcial_Ortiz\TercerParcial_Ortiz\obj\Debug\TercerParcial_Ortiz.dll
 C:\Users\Walter Ortiz\Documents\UAA\C#\Tercer Parcial\TercerParcial_Ortiz\TercerParcial_Ortiz\obj\Debug\TercerParcial_Ortiz.pdb
+C:\Users\Walter Ortiz\Documents\UAA\C#\Tercer Parcial\TercerParcial_Ortiz\TercerParcial_Ortiz\obj\Debug\TercerParcial_Ortiz.csprojAssemblyReference.cache

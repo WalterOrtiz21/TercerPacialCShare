@@ -20,5 +20,15 @@ namespace TercerParcial_Ortiz.Controllers
             var lst = db.Pagina.ToList().Take(10);
             return View(lst);
         }
+
+        public ActionResult ParaTiOrtiz()
+        {
+            var lst = db.Pagina.OrderByDescending(x => x.CantidadLikes).Take(1);
+            int cantProgramacion = db.Pagina.Where(x => x.Categoria == "Programación").Count();
+            double? promedioLikes = db.Pagina.Where(x => x.Ciudad == "Asuncion").Average(x => x.CantidadLikes);
+            ViewBag.cantProgramacion = "Cantidad de paginas de la categoria programacion= " + cantProgramacion;
+            ViewBag.Promedio = "El promedio de likes de las páginas que sean de la ciudad de Asunción= " + promedioLikes;
+            return View(lst);
+        }
     }
 }

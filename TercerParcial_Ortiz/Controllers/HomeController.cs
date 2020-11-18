@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +9,14 @@ namespace TercerParcial_Ortiz.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public async System.Threading.Tasks.Task<ActionResult> Index()
         {
+            string resultado = await Dolar.ObtenerCambios().ConfigureAwait(false);
+            JObject o = JObject.Parse(resultado);
+            JObject ob = (JObject)o["dolarpy"];
+            var c = ob.SelectToken("maxicambios");
+            ViewBag.MaxiCompra = c.SelectToken("compra");
+            ViewBag.MaxiVenta = c.SelectToken("venta");
             return View();
         }
 
